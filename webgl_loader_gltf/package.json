@@ -1,0 +1,57 @@
+{
+  "name": "showroom3d_desktop",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"src/**/*.js\"",
+    "prettier:fix": "prettier --write \"src/**/*.js\"",
+    "prettier:check": "prettier \"src/**/*.js\"",
+    "dev": "vite",
+    "build": "vite build ",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rktumuluri63/VC_ShowRoom3D_Desktop"
+  },
+  "author": "Archana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rktumuluri63/VC_ShowRoom3D_Desktop/issues"
+  },
+  "homepage": "https://viscommerce.com/",
+  "lint-staged": {
+    "src/**/*.js": [
+      "npm run lint"
+    ]
+  },
+  "devDependencies": {
+    "@types/dat.gui": "^0.7.7",
+    "dat.gui": "^0.7.9",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.4",
+    "vite": "^4.0.4",
+    "vite-plugin-mkcert": "^1.10.1"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cannon-es": "^0.20.0",
+    "cannon-es-debugger": "^1.0.0",
+    "eruda": "^2.11.3",
+    "loglevel": "^1.8.1",
+    "postprocessing": "^6.33.0",
+    "pubsub-js": "^1.9.4",
+    "three": "^0.148.0",
+    "three-gltf-extensions": "^0.0.15",
+    "typescript": "^5.2.2",
+    "use-spinner": "^0.2.0"
+  }
+}
